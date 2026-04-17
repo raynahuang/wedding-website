@@ -4,8 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rayna & Sam — September 10, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Combo&display=swap" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
-
 </head>
 <body>
 
@@ -27,6 +29,8 @@
     <div class="star" style="top:5%;left:78%;width:2px;height:2px;animation-delay:1.8s"></div>
     <div class="star" style="top:14%;left:18%;width:1.5px;height:1.5px;animation-delay:2.2s"></div>
     <div class="star" style="top:9%;left:92%;width:3px;height:3px;animation-delay:0.5s"></div>
+    <div class="star" style="top:3%;left:35%;width:1.5px;height:1.5px;animation-delay:2.8s"></div>
+    <div class="star" style="top:12%;left:70%;width:2px;height:2px;animation-delay:1.5s"></div>
   </div>
   <div class="petal" style="left:10%;animation-duration:8s"></div>
   <div class="petal" style="left:30%;animation-duration:10s;animation-delay:2s;width:6px;height:10px"></div>
@@ -39,36 +43,50 @@
   <div class="heart-float" style="left:10%;bottom:20%;animation-duration:9s;font-size:0.9rem">♡</div>
   <div class="heart-float" style="left:80%;bottom:25%;animation-duration:11s;animation-delay:3s;font-size:0.7rem">♡</div>
   <div class="heart-float" style="left:45%;bottom:18%;animation-duration:10s;animation-delay:6s;font-size:0.8rem">♡</div>
-  <div class="cloud cloud-1"></div>
-  <div class="cloud cloud-2"></div>
+
+  <!-- ===== REAL IMAGE CLOUDS — drift across the sky ===== -->
+  <div class="cloud-layer">
+    <img src="photo/clouds.png" class="cloud-img cloud-a" alt="" />
+    <img src="photo/clouds.png" class="cloud-img cloud-b" alt="" />
+    <img src="photo/clouds.png" class="cloud-img cloud-c" alt="" />
+  </div>
+
   <div class="string-lights"><svg viewBox="0 0 1200 65" preserveAspectRatio="none"><path d="M0,8 Q150,48 300,16 Q450,48 600,10 Q750,48 900,16 Q1050,48 1200,8" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><circle cx="75" cy="28" r="3.5" fill="#f5e6bf" opacity="0.6"><animate attributeName="opacity" values="0.6;0.25;0.6" dur="3s" repeatCount="indefinite"/></circle><circle cx="225" cy="32" r="3.5" fill="#f5c6d0" opacity="0.6"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.5s" repeatCount="indefinite"/></circle><circle cx="375" cy="23" r="3.5" fill="#f5e6bf" opacity="0.6"><animate attributeName="opacity" values="0.6;0.3;0.6" dur="2.8s" repeatCount="indefinite"/></circle><circle cx="525" cy="29" r="3.5" fill="#f5c6d0" opacity="0.6"><animate attributeName="opacity" values="0.4;0.7;0.4" dur="3.2s" repeatCount="indefinite"/></circle><circle cx="675" cy="20" r="3.5" fill="#f5e6bf" opacity="0.6"><animate attributeName="opacity" values="0.6;0.25;0.6" dur="3.8s" repeatCount="indefinite"/></circle><circle cx="825" cy="32" r="3.5" fill="#f5c6d0" opacity="0.6"><animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/></circle><circle cx="975" cy="23" r="3.5" fill="#f5e6bf" opacity="0.6"><animate attributeName="opacity" values="0.5;0.25;0.5" dur="3.4s" repeatCount="indefinite"/></circle><circle cx="1125" cy="28" r="3.5" fill="#f5c6d0" opacity="0.6"><animate attributeName="opacity" values="0.4;0.7;0.4" dur="2.9s" repeatCount="indefinite"/></circle></svg></div>
 
-  <div class="cat-banner"><h2><img src="photo/paw.png" class="paw-icon" alt="paw"> We Are Going To Be Married! <img src="photo/paw.png" class="paw-icon" alt="paw"></h2></div>
+  <div class="cat-banner">
+    <h2>
+      <img src="photo/paw.png" class="paw-icon" alt="paw">
+      <span class="banner-word" style="animation-delay:0.3s">We</span>
+      <span class="banner-word" style="animation-delay:0.45s">ArE</span>
+      <span class="banner-word" style="animation-delay:0.6s">GoInG</span>
+      <span class="banner-word" style="animation-delay:0.75s">To</span>
+      <span class="banner-word" style="animation-delay:0.9s">Be</span>
+      <span class="banner-word banner-highlight" style="animation-delay:1.05s">MarriEd!</span>
+      <img src="photo/paw.png" class="paw-icon" alt="paw">
+    </h2>
+  </div>
 
   <div class="center-piece">
-    <div class="circle-wrapper">
-      <div class="icon-ring">
-        <div class="ri"><span>⚓</span></div><div class="ri"><span>🌺</span></div>
-        <div class="ri"><span>⚓</span></div><div class="ri"><span>🌺</span></div>
-        <div class="ri"><span>⚓</span></div><div class="ri"><span>🌺</span></div>
-        <div class="ri"><span>⚓</span></div><div class="ri"><span>🌺</span></div>
-        <div class="ri"><span>⚓</span></div><div class="ri"><span>🌺</span></div>
-        <div class="ri"><span>⚓</span></div><div class="ri"><span>🌺</span></div>
+    <div class="helm-stage">
+      <div class="helm-glow"></div>
+      <div class="helm-wheel">
+        <img src="photo/helm.png" alt="ship's wheel with roses" />
       </div>
-      <div class="gold-ring"></div>
-      <div class="glow-ring"></div>
-      <div class="couple-circle">
-        <div class="circle-stars">
-          <div class="cs" style="top:10%;left:15%"></div><div class="cs" style="top:8%;left:50%;animation-delay:0.5s"></div><div class="cs" style="top:15%;left:80%;animation-delay:1s"></div><div class="cs" style="top:5%;left:35%;animation-delay:1.5s;width:1.5px;height:1.5px"></div>
-        </div>
+      <div class="helm-sparkles">
+        <span class="hsp" style="--a:30deg"></span>
+        <span class="hsp" style="--a:120deg"></span>
+        <span class="hsp" style="--a:210deg"></span>
+        <span class="hsp" style="--a:300deg"></span>
+      </div>
+      <div class="circle-frame">
         <img src="photo/us.png" alt="Rayna, Sam and Charcoal"/>
       </div>
     </div>
   </div>
 
-  <div class="couple-names"><div class="name name-1">Rayna</div><div class="amp-large">&</div><div class="name name-2">Sam</div></div>
+  <div class="couple-names"><div class="name name-1">Rayna</div><div class="amp-large">﹠</div><div class="name name-2">Sam</div></div>
   <div class="wedding-date"><div class="date-text">September 10, 2026</div><div class="venue-hint">Kelowna, British Columbia</div><div class="ornament"><span class="orn-line"></span><span class="orn-heart">♥</span><span class="orn-line"></span></div></div>
-  <div class="boat boat-1">⛵</div><div class="boat boat-2">⛵</div>
+  <div class="boat boat-1">⛵</div><div class="boat boat-2">⛵</div><div class="boat boat-3">⛵</div>
   <div class="waves"><svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="position:absolute;bottom:0;width:110%;left:-5%;opacity:0.25;"><path d="M0,30 C240,60 480,5 720,30 C960,55 1200,10 1440,30 L1440,80 L0,80Z" fill="#d6eef8"><animate attributeName="d" dur="10s" repeatCount="indefinite" values="M0,30 C240,60 480,5 720,30 C960,55 1200,10 1440,30 L1440,80 L0,80Z;M0,40 C240,10 480,55 720,25 C960,50 1200,15 1440,40 L1440,80 L0,80Z;M0,30 C240,60 480,5 720,30 C960,55 1200,10 1440,30 L1440,80 L0,80Z"/></path></svg><svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="position:absolute;bottom:0;width:110%;left:-5%;opacity:0.45;"><path d="M0,45 C240,18 480,55 720,30 C960,52 1200,20 1440,45 L1440,80 L0,80Z" fill="var(--pearl)"><animate attributeName="d" dur="7s" repeatCount="indefinite" values="M0,45 C240,18 480,55 720,30 C960,52 1200,20 1440,45 L1440,80 L0,80Z;M0,35 C240,55 480,18 720,40 C960,18 1200,50 1440,35 L1440,80 L0,80Z;M0,45 C240,18 480,55 720,30 C960,52 1200,20 1440,45 L1440,80 L0,80Z"/></path></svg></div>
   <div class="scroll-hint"><div class="chevron"></div><span>discover more</span></div>
 </section>
@@ -80,17 +98,26 @@
   <div class="section-ornament"><span class="orn-line"></span><span class="orn-icon">♡</span><span class="orn-line"></span></div>
   <div class="gallery-track-wrapper">
     <div class="gallery-track">
-      <div class="photo-frame" style="--rot:-2deg"><img src="photo/ourtravel1.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption"> ꨄ︎LOVEꨄ︎ </div></div>
-      <div class="photo-frame" style="--rot:1.5deg"><img src="photo/ourtravel2.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption"> ꨄ︎HELLOꨄ︎ </div></div>
-      <div class="photo-frame" style="--rot:2deg"><img src="photo/ourtravel4.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption"> ꨄ︎FUJI MOUNTAINꨄ︎ </div></div>
-      <div class="photo-frame" style="--rot:-1.5deg"><img src="photo/ourtravel55.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption"> ꨄ︎TAIPEIꨄ︎ </div></div>
-      <div class="photo-frame" style="--rot:1deg"><img src="photo/ourtravel5.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption"> ꨄ︎ZOOꨄ︎ </div></div>
-      <div class="photo-frame" style="--rot:1deg"><img src="photo/ourtravel6.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption"> 💍RING💍 </div></div>
-      <!-- Duplicate for seamless loop -->
-      <div class="photo-frame" style="--rot:-2deg"><img src="photo/ourtravel7.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption"> MY HUMAN ARE GETTING MARRIED </div></div>
-      <div class="photo-frame" style="--rot:1.5deg"><img src="photo/ourtravel8.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption"> ꨄ︎CHARCOALꨄ︎ </div></div>
-      <div class="photo-frame" style="--rot:-1deg"><img src="photo/ourtravel9.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption"> ꨄ︎ENGAGEMENTꨄ︎ </div></div>
-      <div class="photo-frame" style="--rot:2deg"><img src="photo/ourtravel10.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption"> ꨄ︎LOVEꨄ︎</div></div>     
+      <div class="photo-frame" style="--rot:-2deg"><img src="photo/ourtravel1.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ LOVE ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:1.5deg"><img src="photo/ourtravel2.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ SUNNY ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:-1deg"><img src="photo/ourtravel4.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ FUJI MOUN ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:2deg"><img src="photo/ourtravel5.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ ZOO ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:-1.5deg"><img src="photo/ourtravel55.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ TAIPEI ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:1deg"><img src="photo/ourtravel6.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">💍 RING 💍</div></div>
+      <div class="photo-frame" style="--rot:-2deg"><img src="photo/ourtravel7.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">MY HUMANS ARE GETTING MARRIED</div></div>
+      <div class="photo-frame" style="--rot:1.5deg"><img src="photo/ourtravel8.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ CHARCOAL ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:-1deg"><img src="photo/ourtravel9.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ ENGAGEMENT ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:2deg"><img src="photo/ourtravel10.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ HEART ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:-2deg"><img src="photo/ourtravel1.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ LOVE ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:1.5deg"><img src="photo/ourtravel2.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ SUNNY ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:-1deg"><img src="photo/ourtravel4.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ FUJI MOUN ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:2deg"><img src="photo/ourtravel5.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ ZOO ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:-1.5deg"><img src="photo/ourtravel55.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ TAIPEI ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:1deg"><img src="photo/ourtravel6.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">💍 RING 💍</div></div>
+      <div class="photo-frame" style="--rot:-2deg"><img src="photo/ourtravel7.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">MY HUMANS ARE GETTING MARRIED</div></div>
+      <div class="photo-frame" style="--rot:1.5deg"><img src="photo/ourtravel8.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ CHARCOAL ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:-1deg"><img src="photo/ourtravel9.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ ENGAGEMENT ꨄ︎</div></div>
+      <div class="photo-frame" style="--rot:2deg"><img src="photo/ourtravel10.jpg" alt="Rayna and Sam" loading="lazy"/><div class="caption">ꨄ︎ HEART ꨄ︎</div></div>
     </div>
   </div>
 </section>
@@ -119,49 +146,17 @@
   <div class="section-subtitle">September 10th, 2026</div>
   <div class="section-ornament"><span class="orn-line"></span><span class="orn-icon">⚓</span><span class="orn-line"></span></div>
   <div class="schedule-cards">
-    <div class="schedule-card">
-      <span class="time-badge">3:00 PM — 5:00 PM</span>
-      <h3>Ceremony</h3>
-      <p>Outdoor wedding on the beautiful winery overlooking Lake Okanagan.</p>
-      <div class="attire">Backyard / Casual — Comfortable yet stylish</div>
-      <div class="venue-block">
-        <div class="venue-name">The Gallery Winery</div>
-        <div class="venue-address">2233 Witt Rd, West Kelowna, BC V4T 2C5, Canada</div>
-        <a class="directions-link" href="https://www.google.com/maps/search/?api=1&query=The+Gallery+Winery+2233+Witt+Rd+West+Kelowna+BC" target="_blank" rel="noopener">Get Directions</a>
-      </div>
-    </div>
-    <div class="schedule-card">
-      <span class="time-badge">5:30 PM — Late</span>
-      <h3>Reception</h3>
-      <p>Join us for dinner, drinks, dancing, and celebration at a local favorite.</p>
-      <div class="attire">Attire: Backyard / Casual</div>
-      <div class="venue-block">
-        <div class="venue-name">Rustic Reel Brewing Company</div>
-        <div class="venue-address">760 Vaughan Ave, Kelowna, BC V1Y 7E4, Canada</div>
-      <a class="directions-link" href="https://www.google.com/maps/search/?api=1&query=Rustic+Reel+Brewing+Company+760+Vaughan+Ave+Kelowna+BC" target="_blank" rel="noopener"> Get Directions </a>
-    </div>
-    </div>
+    <div class="schedule-card anim-card"><span class="time-badge">3:00 PM — 5:00 PM</span><h3>Ceremony</h3><p>Outdoor wedding on the beautiful winery overlooking Lake Okanagan.</p><div class="attire">Backyard / Casual — Comfortable yet stylish</div><div class="venue-block"><div class="venue-name">The Gallery Winery</div><div class="venue-address">2233 Witt Rd, West Kelowna, BC V4T 2C5, Canada</div><a class="directions-link" href="https://www.google.com/maps/search/?api=1&query=The+Gallery+Winery+2233+Witt+Rd+West+Kelowna+BC" target="_blank" rel="noopener">Get Directions</a></div></div>
+    <div class="schedule-card anim-card"><span class="time-badge">5:30 PM — Late</span><h3>Reception</h3><p>Join us for dinner, drinks, dancing, and celebration at a local favorite.</p><div class="attire">Backyard / Casual</div><div class="venue-block"><div class="venue-name">Rustic Reel Brewing Company</div><div class="venue-address">760 Vaughan Ave, Kelowna, BC V1Y 7E4, Canada</div><a class="directions-link" href="https://www.google.com/maps/search/?api=1&query=Rustic+Reel+Brewing+Company+760+Vaughan+Ave+Kelowna+BC" target="_blank" rel="noopener">Get Directions</a></div></div>
   </div>
 </section>
 
 <section class="accom-section" id="stay">
   <div class="water-texture"></div>
   <div class="section-title">Where to Stay</div>
-  <div class="section-subtitle">rest before the celebration</div>
+  <div class="section-subtitle">rest before & after the celebration</div>
   <div class="section-ornament"><span class="orn-line"></span><span class="orn-icon">🏨</span><span class="orn-line"></span></div>
-  <div class="accom-card">
-    <h3>Ramada Kelowna Hotel</h3>
-    <div class="accom-address">2170 Harvey Avenue, Kelowna, BC, V1Y 6G8</div>
-    <p>We've arranged accommodation for our guests. You're welcome to stay at our partnered hotel or make your own arrangements.</p>
-    <div class="accom-detail">
-      <div class="detail-row"><span class="icon">♡</span> Rooms available Sep 9–12 (3 nights)</div>
-      <div class="detail-row"><span class="icon">♡</span> Book any dates within this range</div>
-      <div class="detail-row"><span class="icon">♡</span> Rates from $159.99 CAD / night + taxes</div>
-      <div class="detail-row"><span class="icon">♡</span> Standard room with two queen beds</div>
-      <div class="detail-row"><span class="icon">♡</span> No extra person charges</div>
-    </div>
-    <a class="book-btn" href="https://www.wyndhamhotels.com/hotels/07839?checkInDate=09/09/2026&checkOutDate=09/12/2026&groupCode=090926WIL" target="_blank" rel="noopener">Book Your Room →</a>
-  </div>
+  <div class="accom-card"><h3>Ramada Kelowna Hotel</h3><div class="accom-address">2170 Harvey Avenue, Kelowna, BC, V1Y 6G8</div><p>We've arranged accommodation for our guests. You're welcome to stay at our partnered hotel or make your own arrangements.</p><div class="accom-detail"><div class="detail-row"><span class="icon">🗓</span> Sep 9–12 (3 nights)</div><div class="detail-row"><span class="icon">🛏</span> Two queen beds</div><div class="detail-row"><span class="icon">💰</span> From $159.99 CAD/night</div><div class="detail-row"><span class="icon">👥</span> No extra person charges</div></div><div class="accom-note">Book any dates within this range — please let us know when you RSVP</div><a class="book-btn" href="https://www.wyndhamhotels.com/hotels/07839?checkInDate=09/09/2026&checkOutDate=09/12/2026&groupCode=090926WIL" target="_blank" rel="noopener">Book Your Room</a></div>
 </section>
 
 <section class="qa-section" id="qa">
@@ -180,41 +175,7 @@
   <div class="section-title">RSVP</div>
   <div class="section-subtitle">will you sail with us?</div>
   <div class="section-ornament"><span class="orn-line"></span><span class="orn-icon">💌</span><span class="orn-line"></span></div>
-  <div class="rsvp-box">
-    <div class="deadline">Please send RSVP by July 10th ♡</div>
-    <div id="rsvpForm">
-
-      <input type="text" id="name" placeholder="Full Name" required />
-    
-      <input type="tel" id="phone" placeholder="Phone" required />
-    
-      <input type="email" id="email" placeholder="Email" required />
-    
-      <select id="attending">
-        <option value="" disabled selected>Will you be attending?</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-      </select>
-    
-      <select id="guests">
-        <option value="" disabled selected>Number of Guests</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-    
-      <input type="text" id="guestNames" placeholder="Guest Names (if any)" />
-    
-      <button id="rsvpSubmit" class="rsvp-btn" onclick="submitRSVP()"> ♡ Send With Love ♡</button>
-    
-    </div>
-    <div class="rsvp-success" id="rsvpSuccess">
-      <div class="check">🕊️</div>
-      <h3>Thank You!</h3>
-      <p>Your RSVP has been saved. We can't wait to celebrate with you!</p>
-    </div>
-  </div>
+  <div class="rsvp-box"><div class="deadline">Please send RSVP by July 10th ♡</div><div id="rsvpForm"><input type="text" id="name" placeholder="Full Name" required /><input type="tel" id="phone" placeholder="Phone" required /><input type="email" id="email" placeholder="Email" required /><select id="attending"><option value="" disabled selected>Will you be attending?</option><option value="Yes">Yes</option><option value="No">No</option></select><select id="guests"><option value="" disabled selected>Number of Guests</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select><input type="text" id="guestNames" placeholder="Guest Names (if any)" /><button id="rsvpSubmit" class="rsvp-btn" onclick="submitRSVP()"> ♡ Send With Love ♡</button></div><div class="rsvp-success" id="rsvpSuccess"><div class="check">🕊️</div><h3>Thank You!</h3><p>Your RSVP has been saved. We can't wait to celebrate with you!</p></div></div>
 </section>
 
 <footer class="footer">
@@ -222,7 +183,7 @@
   <p class="names">Rayna & Sam</p>
   <p class="captain">& their furry first mate</p>
   <p class="f-date">SEPTEMBER 10, 2026 · KELOWNA, BC</p>
-  <div class="anchors">⚓ ♡ ⚓</div>
+  <div class="anchors">⚓ ♡ ⚓ ♡ ⚓ ♡</div>
 </footer>
 
 <script src="main.js"></script>
